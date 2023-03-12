@@ -26,7 +26,7 @@ function parseElementsValue(elements) {
         break;
 
       case 'delay':
-        currentPromiseDelay = promiseDelay = Number.parseInt(element.value);
+        promiseDelay = Number.parseInt(element.value);
 
         break;
 
