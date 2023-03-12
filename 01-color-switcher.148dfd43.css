@@ -1,0 +1,2 @@
+.wrapper{flex-grow:1;align-items:center;margin-bottom:100px;margin-left:auto;margin-right:auto;display:flex}.wrapper button{height:70px;border-radius:5px;padding:0 16px;font-size:25px}.wrapper button:last-child{background-color:#a62826;margin-left:25px}.wrapper button:last-child:hover{background-color:#bb392b;margin-left:25px}.wrapper button:last-child:disabled,.wrapper button:disabled{cursor:default;background:#818181}.wrapper button:disabled:hover{box-shadow:var(--shadow-default)}
+/*# sourceMappingURL=01-color-switcher.148dfd43.css.map */
