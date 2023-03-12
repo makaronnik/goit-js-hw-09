@@ -1,0 +1,26 @@
+label {
+  font-weight: 700;
+}
+
+input {
+  height: 36px;
+  width: 100px;
+  margin-left: 10px;
+  margin-right: 25px;
+
+  text-align: center;
+
+  border: solid 1.5px #d3d3d3;
+  border-radius: 2px;
+
+  transition: box-shadow 0.2s ease-out;
+}
+
+input:hover {
+  box-shadow: var(--shadow-default);
+}
+
+input:focus {
+  box-shadow: var(--shadow-hover);
+  outline-width: 0px;
+}
