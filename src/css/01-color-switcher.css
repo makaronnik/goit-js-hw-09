@@ -1,0 +1,94 @@
+:root {
+  --shadow-default: 0 2px 2px #00000024, 0 3px 1px -2px #0000001f,
+    0 1px 5px #0003;
+  --shadow-hover: 0 3px 3px #00000024, 0 1px 7px #0000001f, 0 3px 1px -1px #0003;
+}
+
+body {
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+button,
+a {
+  display: inline-block;
+
+  height: 36px;
+  padding: 0 16px;
+
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  line-height: 36px;
+
+  vertical-align: middle;
+  cursor: pointer;
+
+  outline: 0;
+  color: #fff;
+  background-color: #26a69a;
+  text-decoration: none;
+  box-shadow: var(--shadow-default);
+
+  border: none;
+  border-radius: 2px;
+
+  transition: background-color 0.2s ease-out;
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:hover,
+a:hover {
+  background-color: #2bbbad;
+  box-shadow: var(--shadow-hover);
+}
+
+.wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+
+  display: flex;
+  align-items: center;
+
+  flex-grow: 1;
+}
+
+.wrapper button {
+  height: 70px;
+  padding: 0 16px;
+
+  font-size: 25px;
+
+  border-radius: 5px;
+}
+
+.wrapper button:last-child {
+  margin-left: 25px;
+  background-color: #a62826;
+}
+
+.wrapper button:last-child:hover {
+  margin-left: 25px;
+  background-color: #bb392b;
+}
+
+.wrapper button:last-child:disabled {
+  cursor: default;
+  background: #818181;
+}
+
+.wrapper button:disabled {
+  cursor: default;
+  background: #818181;
+}
+
+.wrapper button:disabled:hover {
+  box-shadow: var(--shadow-default);
+}

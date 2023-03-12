@@ -1,3 +1,5 @@
+import '../css/01-color-switcher.css';
+
 const refs = {
   startBtnEl: document.querySelector('[data-start]'),
   stopBtnEl: document.querySelector('[data-stop]'),
