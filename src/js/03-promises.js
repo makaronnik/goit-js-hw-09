@@ -46,13 +46,13 @@ function runPromises() {
     setTimeout(function () {
       createPromise(position, currentPromiseDelay)
         .then(({ position, delay }) => {
-          message = `✅ Fulfilled promise ${position} in ${delay}ms`;
+          const message = `✅ Fulfilled promise ${position} in ${delay}ms`;
 
           Notify.success(message);
           console.log(message);
         })
         .catch(({ position, delay }) => {
-          message = `❌ Rejected promise ${position} in ${delay}ms`;
+          const message = `❌ Rejected promise ${position} in ${delay}ms`;
 
           Notify.failure(message);
           console.log(message);
